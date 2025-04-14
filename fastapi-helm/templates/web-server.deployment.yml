@@ -40,11 +40,16 @@ spec:
                     #         secretKeyRef:
                     #             name: redis-secret-{{ .Values.configVersions.redis }}
                     #             key: db_password
-                      - name: MODEL_SERVER_URL
+                      - name: MODEL_SERVER_URL_1
                         valueFrom:
                             configMapKeyRef:
                                 name: fastapi-mamba-model-2-config-{{ .Values.configVersions.modelServer }}
-                                key: model_server_url
+                                key: model_server_url_1
+                      - name: MODEL_SERVER_URL_2
+                        valueFrom:
+                            configMapKeyRef:
+                                name: fastapi-mamba-model-2-config-{{ .Values.configVersions.modelServer }}
+                                key: model_server_url_2
 
 
 
