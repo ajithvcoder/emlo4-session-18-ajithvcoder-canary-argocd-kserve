@@ -9,7 +9,7 @@ metadata:
     autoscaling.knative.dev/minScale: "1"
     autoscaling.knative.dev/maxScale: "3"
     autoscaling.knative.dev/metric: "rps"
-    autoscaling.knative.dev/target: "5" 
+    autoscaling.knative.dev/target: "5"
   labels:
       app.kubernetes.io/name: fastapi-mamba-model-2
       app.kubernetes.io/part-of: fastapi-app
@@ -27,8 +27,8 @@ spec:
       imagePullPolicy: Always
       resources:
         requests:
-          cpu: 800m    # Average CPU usage is around 700m
-          memory: 1.5Gi # Average memory usage is around 600Mi
+          cpu: 800m
+          memory: 1.5Gi
         limits:
           cpu: 2600m
           memory: 4Gi
