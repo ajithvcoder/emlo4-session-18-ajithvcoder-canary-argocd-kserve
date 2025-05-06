@@ -9,7 +9,7 @@ metadata:
     autoscaling.knative.dev/minScale: "1"
     autoscaling.knative.dev/maxScale: "3"
     autoscaling.knative.dev/metric: "rps"
-    autoscaling.knative.dev/target: "20" 
+    autoscaling.knative.dev/target: "5" 
   labels:
       app.kubernetes.io/name: fastapi-mamba-model-2
       app.kubernetes.io/part-of: fastapi-app
