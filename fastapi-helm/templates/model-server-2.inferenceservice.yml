@@ -27,8 +27,8 @@ spec:
       imagePullPolicy: Always
       resources:
         requests:
-          cpu: "2400m"    # Average CPU usage is around 700m
-          memory: "3.5Gi" # Average memory usage is around 600Mi
+          cpu: 800m    # Average CPU usage is around 700m
+          memory: 1.5Gi # Average memory usage is around 600Mi
         limits:
           cpu: 2600m
           memory: 4Gi
