@@ -19,7 +19,7 @@ def load_image() -> bytes:
 
 def make_request(url: str) -> Dict:
     """Make a single request to the API"""
-    with open("input.json") as f:
+    with open("utils/input.json") as f:
         payload = json.load(f)
     headers_1 = {"Host": "fastapi-mamba-model-2.default.emlo.tsai", "Content-Type": "application/json"}
     
