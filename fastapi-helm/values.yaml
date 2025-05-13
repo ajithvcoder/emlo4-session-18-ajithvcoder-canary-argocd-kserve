@@ -2,7 +2,7 @@
 namespace: default
 environment: default
 hostname: fastapi.localhost
-modelName: "fastapi-mamba-model"
+modelName: "timm-model"
 
 # Config Versions
 configVersions:

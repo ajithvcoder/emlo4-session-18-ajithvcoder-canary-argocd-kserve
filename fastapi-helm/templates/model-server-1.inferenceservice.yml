@@ -1,7 +1,7 @@
 apiVersion: "serving.kserve.io/v1beta1"
 kind: "InferenceService"
 metadata:
-  name: "fastapi-mamba-model-1"
+  name: "timm-model-1"
   namespace: {{ .Values.namespace }}
   annotations:
     serving.kserve.io/enable-metric-aggregation: "true"
@@ -11,7 +11,7 @@ metadata:
     autoscaling.knative.dev/metric: "rps"
     autoscaling.knative.dev/target: "5"
   labels:
-      app.kubernetes.io/name: fastapi-mamba-model-1
+      app.kubernetes.io/name: timm-model-1
       app.kubernetes.io/part-of: fastapi-app
       app.kubernetes.io/instance: {{ .Release.Name }}
       app.kubernetes.io/managed-by: {{ .Release.Service }}
